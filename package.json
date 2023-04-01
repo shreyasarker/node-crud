@@ -1,0 +1,19 @@
+{
+  "name": "node-crud",
+  "version": "1.0.0",
+  "description": "This is Vanilla Node.js CRUD API Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shreyasarker/node-crud.git"
+  },
+  "author": "Shreya Sarker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shreyasarker/node-crud/issues"
+  },
+  "homepage": "https://github.com/shreyasarker/node-crud#readme"
+}
