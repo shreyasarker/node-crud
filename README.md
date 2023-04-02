@@ -2,7 +2,7 @@
 
 ## Process
 
-To create package.json-
+### To create package.json-
 ```
 npm init
 ```
@@ -14,3 +14,9 @@ npm init
 - Provide keyword if any
 - Provide author
 - Provide License
+
+### Packages
+```
+npm i --save-dev nodemon
+npm i dotenv
+```

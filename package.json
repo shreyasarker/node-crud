@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/shreyasarker/node-crud/issues"
   },
-  "homepage": "https://github.com/shreyasarker/node-crud#readme"
+  "homepage": "https://github.com/shreyasarker/node-crud#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
 }
