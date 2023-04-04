@@ -1,5 +1,6 @@
 import booksBodyParser from "../utils/books.body-parser.js";
 import books from "../data/books.json" assert { type: "json"};
+import writeToFile from "../utils/write-to-file.js";
 
 export default async (req, res) => {
   if(req.url === "/api/books") {
@@ -14,11 +15,15 @@ export default async (req, res) => {
         body._id = 1;
       }
       req.books.push(body);
+      writeToFile(req.books);
       res.writeHead(201, {"Content-Type": "application/json"});
       res.end();
     } catch(err) {
       res.writeHead(400, {"Content-Type": "application/json"});
       res.end(JSON.stringify({title: "Error", message: "Something went wrong!"}));
     }
+  } else {
+    res.writeHead(404, { "Content-Type": "application/json" });
+    res.end(JSON.stringify({ title: "Not found", message: "Route not found." }));
   }
 };
