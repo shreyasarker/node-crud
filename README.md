@@ -1,4 +1,4 @@
-# CRUD using Node.js
+# CRUD REST API using Vanilla Node.js without Framework
 
 ## Process
 
@@ -19,4 +19,20 @@ npm init
 ```
 npm i --save-dev nodemon
 npm i dotenv
+```
+
+## Usage
+
+```
+# Install dependencies
+npm install
+yarn install
+
+# Run in develpment
+npm run dev
+yarn run dev
+
+# Run in production
+npm start
+yarn start
 ```
